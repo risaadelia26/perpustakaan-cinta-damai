@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet' type='text/css'/>
+    
+    <script src="https://kit.fontawesome.com/f9355065a6.js" crossorigin="anonymous"></script>
+    <title>E-Library Cinta Damai</title>
+    <link rel="shortcut icon"href="c:\Users\Lenovo\Desktop\PW UAS\LOGO (2).jpg">
+        
+    <style>
+      * .banner{
+        height: 80vh;
+        background-color:;
+        background-size: cover;
+        background-position: center;
+      } */
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+    
+    :root{
+        --primaryColor: #AAC3D8;
+        --secondaryColor: #76FDFF;
+        --blue:#4c8392;
+        --blue:#c7d8e6;
+        --firstGradient: linear-gradient(90deg, var(--secondaryColor),var(--primaryColor));
+        --gradient:linear-gradient(90deg, var(--blue), var(--blue));
+    }
+    
+    *{
+        font-family: 'Poppins', sans-serif;
+        margin:0; padding:0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none; border:none;
+        text-transform: capitalize;
+    }
+    
+    *::selection{
+        background:var(--blue);
+        color:#c7d8e6;
+    }
+    
+    .nav-link {
+      font-size: medium;
+    }
+    
+    .navbar-brand {
+      font-size: medium;
+    }
+    
+    html{
+        font-size: 80.5%;
+        overflow-x: hidden;
+        margin-top: 0px;
+    }
+    
+    body{
+        background:#c7d8e6;
+    }
+    
+    section{
+        min-height: 100vh;
+        padding:0 9%;
+        padding-top: 7.5rem;
+        padding-bottom: 2rem;
+    }
+    
+    .landingPage{
+      margin-top: -50px;
+      background-color: rgb(39, 152, 152);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+    }
+    .landingPage .image img{
+      width:40vw;
+      
+      
+    }
+    
+    @keyframes float{
+      0%, 100%{
+          transform: translateY(0rem);
+      }
+      50%{
+          transform: translateY(-3.5rem);
+      }
+    }
+    
+    .landingPage .content h3{
+      font-size: 5.5rem;
+      color:black;
+      font-size: 4em;
+      text-transform: uppercase;
+    }
+    
+    .landingPage .content h3 span{
+      color:var(--pink);
+      text-transform: uppercase;
+    }
+    
+    .landingPage .content p{
+      font-size: 1em;
+      color:var(--blue);
+      padding:1rem 0;
+    }
+    
+    @media (max-width:1200px){
+      
+      html{
+          font-size: 55%;
+          
+      }
+    
+    }
+    
+    @media (max-width:991px){
+      
+      section{
+          padding:0 3%;
+          padding-top: 7.5rem;
+          padding-bottom: 2rem;
+      }
+    
+    }
+    
+    @media (max-width:768px){
+    
+      .landingPage{
+          flex-flow: column-reverse;
+      }
+    
+      .landingPage .image img{
+          width:100%;
+      }
+    
+      .landingPage .content h3{
+          font-size: 3.6rem;
+      }
+    
+      .landingPage .content p{
+          font-size: 1.5rem;
+      }
+      .listBook{
+          flex-flow: column-reverse;
+      }
+    
+    }
+      .landingPage{
+        margin-top: -80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        background:url(.) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    @keyframes fade{
+      0%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
+    .card{
+        align-items: center;
+        border: 20px;
+        background-color: #ffc7f8;
+        margin: auto;
+        
+    }
+    .card1 {
+        border: brown;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 30px;
+          }
+          
+          .rounded-circle {
+            width: 60px;
+          }
+          
+          .breadcrumb-item a {
+            text-decoration: none;
+          }
+          
+    
+    .card2{
+      
+      margin: auto;
+      margin-bottom: 10px;
+      border-radius: 20px;
+      background-color: #ffffff;
+    }
+    
+    .date{
+      font-size: 11px;
+      margin-bottom: 5px;
+    }
+    
+    .detaile{
+      margin-left: auto;
+    }
+    
+    
+    .cat{
+        align-items: right;
+    }
+    .far{
+      color: #76FDFF;
+    }
+    .btn{
+      text-align: center;
+      border-radius: 50px;
+      justify-content: center;
+    }
+    </style>
+</head>
+<body> 
+    <div class="row">
+        <div class="col-12 col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light "style="background-color:silver;"">
+                <a class="navbar-brand" href="INDEX.html">E-Library Cinta Damai</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active" style="margin-right: 50px;">
+                      <a class="nav-link"  href="INDEX.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 50px;">
+                      <a class="nav-link" href="Bookmark.html">Bookmark</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 50px;">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                      </li>
+                      <li class="nav-item" style="margin-right: 50px;">
+                        <a class="nav-link" href="LOGIN.html">Login</a>
+                      </li>
+                  </ul>
+                  </form>
+                </div>
+              </nav>
+        </div>
+    </div>
+
+    <section class="landingPage" id="landingPage"style="background-color:#a0b9ce;">
+      <div class="image">
+          <img src="banner.jpg" style="margin-top: -10; margin-right: 50px;" alt="">
+      </div>
+      <br>
+      <br>
+      <div class="content" style="margin-top: -40px;" >
+        <h3>Selamat Datang Di <span> <br> E-Library Cinta Damai</span></h3>
+        <h4>literasi dan Belajar itu menyenangkan</h4>
+    </div>
+    </section>
+
+<!-- semua buku -->
+<div class="container mt-5 mb-5 ">
+  <div class="row">
+    <div class="col-12 col-md-12 ">
+      <h1 style="text-align: center;background-color:silver"> All Books</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container  mt-5 margin-right margin-top" >
+  <div class="row">
+  <div class="col-12 col-md-3  ">
+    <div class="card2 " style="width: 18rem;">
+      <img src="athar.jpg" style="border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+      <div class="card-body ">
+        <h5 style="text-align: center;">Cinta Dalam Ikhlas</h5>
+       <div class="star text-center">
+        <i  class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i style="color: black;" class="far fa-star"></i>
+       </div>        
+        <p class="date text-center">Tanggal rilis:Oktober 2018.</p>
+         <p class="detaile">Novel Cinta Dalam Ikhlas adalah sebuah karya yang sangat layak untuk dibaca, 
+            terutama bagi mereka yang menyukai kisah cinta yang penuh dengan konflik dan ujian... </p>
+          <a class="btn btn-primary" href="Detail2.html" role="button">Preview</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-3">
+    <div class="card2 " style="width: 20 rem;">
+      <img src="rindu.jpg" style="border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+      <div class="card-body">
+        <h5 style="text-align: center;">Rindu</h5>
+        <div class="star text-center">
+          <i  class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i style="color: black;" class="far fa-star"></i>
+
+         </div> 
+        <p class="date text-center">Tanggal rilis: 4 febuari 2021.</p>
+          <p class="detaile">
+            Buku ini akan menceritakan tentang perjalanan yang panjang dengan sebuah kerinduan, 
+            akan bertemakan zaman penjajahan belanda di tanggal 1 desember 1938 
+          ...
+          <br>
+          </p>
+          <a class="btn btn-primary" href="Detail2.html" role="button">Preview</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-3">
+    <div class="card2 " style="width: 18rem;">
+      <img src="pulang.jpg" style="border-radius: 30 px;" class="card-img-top" alt="gambar tidak ditemukan">
+      <div class="card-body">
+        <h5 style="text-align: center;">Pulang</h5>
+        <div class="star text-center">
+          <i  class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i style="color: black;" class="far fa-star"></i>
+          <i style="color: black;" class="far fa-star"></i>
+
+         </div> 
+        <p class="date text-center">Tanggal rilis: 2015</p>
+          <p class="detaile"> karya Tere Liye adalah novel yang mengisahkan 
+            tentang seorang anak desa bernama Bujang yang mencari jati diri dan makna kehidupan...</p>
+          <a class="btn btn-primary" href="Detail2.html" role="button">Preview</a>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="col-12 col-md-3">
+    <div class="card2 " style="width: 18rem;">
+      <img src="cinta itu luka.jpg"  style="border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+      <div class="card-body " >
+        <h5 style="text-align: center;">Cinta Itu Luka</h5>
+        <div class="star text-center">
+          <i  class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i style="color: black;" class="far fa-star"></i>
+
+         </div> 
+        <p class="date text-center">Tanggal rilis: Desember 2017</p>
+         <p class="detaile">Novel ini berkisah tentang bagaimana hiruk pikuk
+             seorang perempuan bernama Ayu Dewi dalam menjalani kehidupannya yang begitu keras ...</p>
+             <br>
+             <br>
+          <a class="btn btn-primary" href="Detail2.html" role="button">Preview</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="container mt-5 margin-right margin-top">
+  <div class="row">
+  <div class="col-12 col-md-3">
+    <div class="card2 " style="width: 18rem;">
+      <img src="hujaaan.jpg" style="border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+      <div class="card-body">
+        <h5 style="text-align: center;">Hujan</h5>
+        <div class="star text-center">
+          <i  class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i style="color: black;" class="far fa-star"></i>
+
+         </div> 
+        <p class="date text-center">Tanggal rilis: 09 Januari 2016.</p>
+
+          <p class="detaile"> Novel ini menceritakan kisah cinta dua tokoh utama, yaitu Lail dan Esok.
+            Novel ini juga menceritakan kisah dan perjuangan hidup Lail, yang harus menjadi yatim piatu diusia 13 tahun.
+          </p><br><br>
+          <a class="btn btn-primary" href="Detail2.html" role="button">Preview</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-3">
+    <div class="card2 " style="width: 20rem;">
+      <img src="dhirga.jpg" style="border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+      <div class="card-body">
+        <h5 style="text-align: center;">Dhirga</h5>
+        <div class="star text-center">
+          <i  class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i style="color: black;" class="far fa-star"></i>
+
+         </div> 
+        <p class="date text-center">Tanggal rilis: 07 Januari 2019</p>
+         <p class="detaile">Novel ini menceritakan tentang seorang Dhirga Alpha Pratama ,
+            ketua osis SMA Angkasa yang berprestasi dan membanggakan ... </p>
+            <br>
+            <br><br><br>
+          <a class="btn btn-primary" href="Detail2.html" role="button">Preview</a>
+      </div>
+    </div>
+  </div><div class="col-12 col-md-3">
+    <div class="card2" style="width: 18rem;">
+      <img src="172_Days.jpg" style="border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+      <div class="card-body">
+        <h5 style="text-align: center;">172 Days</h5>
+        <div class="star text-center">
+          <i  class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i style="color: black;" class="far fa-star"></i>
+
+         </div> 
+        <p class="date text-center">Tanggal rilis: 21 Juli 2022</p>
+         <p class="detaile">Nadzira dikisahkan sebagai perempuan yang jauh dari agama. Dia gemar dengan
+            gemerlap dunia malam selayaknya anak muda lainnya. Di sisi lain, Ameer, yang
+            merupakan anak salah satu ulama ternama di Indonesia
+             ...</p>
+             <a class="btn btn-primary" href="Detail2.html" role="button">Preview</a>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="col-12 col-md-3">
+    <div class="card2" style="width: 18rem;">
+      <img src="hello.jpg" style="border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+      <div class="card-body">
+        <h5 style="text-align: center;">Hello</h5>
+        <div class="star text-center">
+          <i  class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i style="color: black;" class="far fa-star"></i>
+          <i style="color: black;" class="far fa-star"></i>
+
+         </div> 
+        <p class="date text-center">Tanggal rilis: 09 April 2023.</p>
+          <p class="detaile"> Hello merupakan novel terbaru yang diterbitkan oleh Tere Liye. Mengangkat tema yang cukup unik, tentang cinta antara dua anak manusia yang telah bersama sejak masih bayi.
+            Hesty dan Tigor. Keduanya lahir ke dunia di detik yang hampir bersamaan...</p>
+          <a class="btn btn-primary" href="Detail2.html" role="button">Preview</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class="container margin-top justify-content-center" >
+  <div class="row">
+    <div class="col-12 col-md-12 margin-top" >
+      <nav aria-label="Page navigation example">
+        <ul class="pagination" style="justify-content: center; margin-top: auto;">
+          <li class="page-item text-center" style="justify-content: center;">
+            <a class="page-link" href="LOGIN.html" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item"><a class="page-link" href="#">6</a></li>
+          <li class="page-item"><a class="page-link" href="#">7</a></li>
+          <li class="page-item"><a class="page-link" href="#">8</a></li>
+          <li class="page-item"><a class="page-link" href="#">9</a></li>
+          <li class="page-item"><a class="page-link" href="#">10</a></li>
+
+          <li class="page-item">
+            <a class="page-link" href="Bookmark.html" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+           
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12 col-md-12" style="border-radius: 20px;">
+      <img src="Banner2.jpg" style="width: 90%; border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+    </div>
+  </div>
+</div>
+<a class="btn btn-primary" href="BOOKMARK.HTML" role="button">Next</a>
+  
+</div>
+</div>
+
+<footer >
+  <div class="col-12 col-md-12 mt-5 " style="background: #aac3d8;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3 mt-5">
+                <h5>E-library Cinta Damai</h5>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <p>2024 copyright reserved &copy;</p>
+            </div>
+            <div class="col-12 col-md-3 mt-5">
+                <h5>About<br>Nim:241011701251</h5>
+                <p>Blog <br>@risa_Adelia</p>
+                <p>Publish With Us<br>01SIFE002</p>
+            </div>
+            <div class="col-12 col-md-3 mt-5">
+               <h5>Help</h5>
+               <p>Contact Us</p>
+               <p>Helps</p>
+               <p>Term and Conditions</p>
+               <p>Privacy Policy</p>
+           </div>
+           <div class="col-12 col-md-3 mt-5">
+               <h5>Network</h5>
+               <p>E-Library</p>
+           </div>
+        </div>
+    </div>
+</div>
+</div>
+</footer>
+</body>
+</html>

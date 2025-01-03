@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+    <script src="https://kit.fontawesome.com/f9355065a6.js" crossorigin="anonymous"></script>
+    <title>Detail</title>
+    <link rel="shortcut icon"href="c:\Users\Lenovo\Desktop\PW UAS\LOGO (2).jpg">
+    <style>
+      * .banner{
+        height: 80vh;
+        background-color:;
+        background-size: cover;
+        background-position: center;
+      } */
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+    
+    :root{
+        --primaryColor: #AAC3D8;
+        --secondaryColor: #76FDFF;
+        --blue:#4c8392;
+        --blue:#c7d8e6;
+        --firstGradient: linear-gradient(90deg, var(--secondaryColor),var(--primaryColor));
+        --gradient:linear-gradient(90deg, var(--blue), var(--blue));
+    }
+    
+    *{
+        font-family: 'Poppins', sans-serif;
+        margin:0; padding:0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none; border:none;
+        text-transform: capitalize;
+    }
+    
+    *::selection{
+        background:var(--blue);
+        color:#c7d8e6;
+    }
+    
+    .nav-link {
+      font-size: medium;
+    }
+    
+    .navbar-brand {
+      font-size: medium;
+    }
+    
+    html{
+        font-size: 80.5%;
+        overflow-x: hidden;
+        margin-top: 0px;
+    }
+    
+    body{
+        background:#c7d8e6;
+    }
+    
+    section{
+        min-height: 100vh;
+        padding:0 9%;
+        padding-top: 7.5rem;
+        padding-bottom: 2rem;
+    }
+    
+    .landingPage{
+      margin-top: -50px;
+      background-color: rgb(39, 152, 152);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+    }
+    .landingPage .image img{
+      width:40vw;
+      
+      
+    }
+    
+    @keyframes float{
+      0%, 100%{
+          transform: translateY(0rem);
+      }
+      50%{
+          transform: translateY(-3.5rem);
+      }
+    }
+    
+    .landingPage .content h3{
+      font-size: 5.5rem;
+      color:black;
+      font-size: 4em;
+      text-transform: uppercase;
+    }
+    
+    .landingPage .content h3 span{
+      color:var(--pink);
+      text-transform: uppercase;
+    }
+    
+    .landingPage .content p{
+      font-size: 1em;
+      color:var(--blue);
+      padding:1rem 0;
+    }
+    
+    @media (max-width:1200px){
+      
+      html{
+          font-size: 55%;
+          
+      }
+    
+    }
+    
+    @media (max-width:991px){
+      
+      section{
+          padding:0 3%;
+          padding-top: 7.5rem;
+          padding-bottom: 2rem;
+      }
+    
+    }
+    
+    @media (max-width:768px){
+    
+      .landingPage{
+          flex-flow: column-reverse;
+      }
+    
+      .landingPage .image img{
+          width:100%;
+      }
+    
+      .landingPage .content h3{
+          font-size: 3.6rem;
+      }
+    
+      .landingPage .content p{
+          font-size: 1.5rem;
+      }
+      .listBook{
+          flex-flow: column-reverse;
+      }
+    
+    }
+      .landingPage{
+        margin-top: -80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        background:url(.) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    @keyframes fade{
+      0%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
+    .card{
+        align-items: center;
+        border: 20px;
+        background-color: #ffc7f8;
+        margin: auto;
+        
+    }
+    .card1 {
+        border: brown;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 30px;
+          }
+          
+          .rounded-circle {
+            width: 60px;
+          }
+          
+          .breadcrumb-item a {
+            text-decoration: none;
+          }
+          
+    
+    .card2{
+      
+      margin: auto;
+      margin-bottom: 10px;
+      border-radius: 20px;
+      background-color: #ffffff;
+    }
+    
+    .date{
+      font-size: 11px;
+      margin-bottom: 5px;
+    }
+    
+    .detaile{
+      margin-left: auto;
+    }
+    
+    
+    .cat{
+        align-items: right;
+    }
+    .far{
+      color: #76FDFF;
+    }
+    .btn{
+      text-align: center;
+      border-radius: 50px;
+      justify-content: center;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-12 col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: silver;">
+                <a class="navbar-brand" href="INDEX.html">E-library Cinta Damai</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item " style="margin-right: 50px;">
+                      <a class="nav-link"  href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 50px;">
+                      <a class="nav-link" href="bookmark.html">Bookmark</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 50px;">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                      </li>
+                      <li class="nav-item" style="margin-right: 50px;">
+                        <a class="nav-link" href="login.html">Login</a>
+                      </li>
+
+                  </ul>
+                  </form>
+                </div>
+              </nav>
+        </div>
+    </div>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="card mb-3" style="max-width: 100%;background-color:#81a5c3;">
+            <div class="row g-0">
+              <div class="col-12 col-md-4">
+                <img src="hujaaan.jpg"  class="img-fluid rounded-start"  alt="hujan" 
+                style="width: 100%; border-radius: 20px; margin-top: 40px;background-color:#81a5c3;" >
+              </div>
+              <div class="col-12, col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title"><strong>Hujan</h3></strong>
+                  <p class="date">Tanggal rilis: 09 Januari 2016</p>
+                    <p class="detaile">Novel ini menceritakan kisah cinta dua tokoh utama, yaitu Lail dan Esok.
+                       Novel ini juga menceritakan kisah dan perjuangan hidup Lail, yang harus menjadi yatim piatu diusia 13 tahun. Lail dan Esok bertemu setelah letusan gunung berapi pada tahun 2042. Akibat dari letusan gunung berapi ini menghancurkan sebagian besar bumi dan hanya meninggalkan 10% manusia di bumi, serta merusak iklim dan cuaca bumi. Lail dan Esok tinggal di tempat pengungsian, mereka selalu bersama-sama dan tidak terpisahkan. Namun setelah pengungsian ditutup, mereka terpisah dan Esok diadopsi oleh keluarga wali kota dan Ia harus pindah ke ibu kota untuk melanjutkan studinya hingga berhasil memciptakan mobil terbang pertama. Sedangkan Lail adalah seorang gadis sederhana yang tinggal di sebuah panti sosial yang akhirnya menjadi relawan kemanusiaan dan bersekolah di sekolah perawat dan berteman dengan Maryam.
+
+                      Lail ternyata diam-diam mempunyai perasaan lebih terhadap Esok, namun Ia memendamnya bertahun-tahun. Akhirnya Lail memutuskan untuk menyibukkan dirinya dengan kegiatan yang bermanfaat. Lail dan Maryam bergabung dengan organisasi relawan dan mereka adalah relawan termuda. Mereka juga menorehkan prestasi, salah satunya ditempatkan di Distrik 2. Ada dua kota kembar di hulu dan hilir, dan dua kota ini telah dilegalkan sejauh 50 kilometer. Saat itu bendungan di bagian hulu retak, jika bendungan pecah maka akan menghancurkan dua kota kembar tersebut. Saat itu, hanya ada satu cara untuk mencapai bagian hilir yang mungkin bergerak cepat saat badai. Keduanya berhasil memperingati kota tersebut, dan pengabdian mereka benar-benar membuat mereka memenangkan penghargaan.
+                      
+                      Dengan kesibukannya, Lail dapat sedikit mengalihkan kerinduannya pada Esok. Esok selalu mengunjungi dengan membawa sepeda merah, sepeda merah ini mereka kenakan saat bencana, dan juga memakai topi yang diberikan Lail kepadanya. Sayangnya, intensitas pertemuan mereka menurun. Jika Esok tidak sibuk, mereka hanya bisa bertemu setahun sekali. Lail tidak pernah menghubungi Esok, dan terkadang dia bertanya kepada ibunya Esok tentang Esok.
+                      
+                      
+                  
+                    </p>
+                    <i class="fas fa-star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </i>
+                    <p> Judul : Hujan<br>
+
+                      <br>Penulis: Tere Liye<br>
+                      
+                      <br>Penerbit: PT Gramedia Pustaka Umum<br>
+                      
+                      <br>Tahun terbit: 2016<br>
+                      
+                      <br>Tebal buku: 320 halaman (20 cm)<br>
+                      
+                      <br>ISBN : 978-602-03-2478-4<br>
+                      
+                      
+                      
+          
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <div class="row " >
+                    <a class="btn btn-primary"
+        href="https://wa.me/6289624465998?text=Halo,%20saya%20ingin%20memesan%20produk%20Anda!" role="button" style="margin-right: 5px">Pesan Disini</a>
+                    
+                    <a class="btn btn-primary" href="BOOKMARK.HTML" role="button">Add To Bookmark</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+<br>
+<a class="btn btn-primary" href="Bookmark.html" role="button">Back</a>
+<a class="btn btn-primary" href="profile.html" role="button">Next</a>
+    
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-12">
+            <label for="Comment class="form-label>Comments</label>
+<input type="comment" id="inputcoment" class="form-control" aria-describedby="textHelpBlock" style="height: 100px;">
+<div id="textHelpBlock" class="form-text">
+  Give your opinions about this book
+</div>
+<button type="button" class="btn btn-primary">Sent</button>
+        </div>
+    </div>
+</div>
+
+
+             <div class="container" id="listBook">
+              <h1 style="text-align: center; font-family:-apple-system; font-size: 25px; font-style: normal; font-family: sans-serif; margin-bottom: 20px;"><b>Top Books</b></h1>
+             </div>
+        </div>
+    </div>
+    
+
+             <div class="container text-center mt-5 margin-right margin-top">
+              <div class="row">
+              <div class="col-12 col-md-3 text-center">
+                <div class="card2 text-center"  style="width: 18rem;">
+                  <img src="172_Days.jpg"  style="border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+                  <div class="card-body text-center">
+                    <h5 style="text-align: center;" >172 Days</h5>
+                    <div class="star text-center">
+                      <i  class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                     </div> 
+                    <p class="date text-center">Tahun terbit : 21 Juli 2022</p><BR>
+                    <a class="btn btn-primary" href="Detail.html" role="button">Preview</a>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-12 col-md-3">
+                <div class="card2 margin-top " style="width: 18rem;">
+                  <img src="dhirga.jpg"  style="border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+                  <div class="card-body " >
+                    <h5 style="text-align: center;">Dhirga</h5>
+                    <div class="star text-center">
+                      <i  class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i style="color: black;" class="far fa-star"></i>
+                     </div> 
+                    <p class="date text-center">07 Januri 2019.</p><BR><BR>
+                      <a class="btn btn-primary" href="Detail.html" role="button">Preview</a>
+                  </div>
+                </div>
+              </div>
+          
+            <div class="col-12 col-md-3">
+              <div class="card2" style="width: 18rem;">
+                <img src="hello.jpg" style="border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+                <div class="card-body">
+                  <h5 style="text-align: center;">Hello</h5>
+                  <div class="star text-center">
+                    <i  class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i style="color: black;" class="far fa-star"></i>
+                    <i style="color: black;" class="far fa-star"></i>
+                   </div> 
+                  <p class="date text-center">Tanggal rilis: 10 April 2023.</p>
+                    <a class="btn btn-primary mt-4" href="Detail.html" role="button">Preview</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card2" style="width: 20rem;">
+                  <img src="rindu.jpg" style="border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+                  <div class="card-body">
+                    <h5 style="text-align: center;">Rindu</h5>
+                    <div class="star text-center">
+                      <i  class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i style="color: black;" class="far fa-star"></i>
+                      <i style="color: black;" class="far fa-star"></i>
+                     </div> 
+                    <p class="date text-center">Tanggal rilis: 4 Febuari 2021</p>
+                      <a class="btn btn-primary mt-4" href="Detail.html" role="button">Preview</a>
+                  </div>
+                
+            </div>
+            </div>
+            </div>
+            </div>
+          
+    <footer >
+        <div class="col-12 col-md-12 mt-5 " style="background:#aac3d8;">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-3 mt-5">
+                      <h5>E-Library Cinta Damai</h5>
+                      <i class="fab fa-facebook"></i>
+                      <i class="fab fa-instagram"></i>
+                      <i class="fab fa-twitter"></i>
+                      <p>2024 copyright reserved &copy;</p>
+                  </div>
+                  <div class="col-12 col-md-3 mt-5">
+                      <h5>About<br>Nim:241011701251</h5>
+                      <p>Blog<br>@Risa_Adelia</p>
+                      <p>Publish With Us<br>01SIFE002</p>
+                  </div>
+                  <div class="col-12 col-md-3 mt-5">
+                     <h5>Help</h5>
+                     <p>Contact Us</p>
+                     <p>Helps</p>
+                     <p>Term and Conditions</p>
+                     <p>Privacy Policy</p>
+                 </div>
+                 <br>
+                 <div class="col-12 col-md-3 mt-5">
+                     <h5>Network</h5>
+                     <p>E-Library</p>
+                 </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </footer>
+</body>
+</html>
